@@ -1,8 +1,5 @@
+;; Custom colors
 (custom-set-faces
-  ;; custom-set-faces was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
  '(default ((t (:stipple nil :background "black" :foreground "white" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 80 :width normal :family "xos4-terminus")))))
 
 (global-set-key [(f2)] 'make-frame-command)
@@ -39,4 +36,5 @@
 (setq bkup-backup-directory-info (list (cons "." backup-dir)))
 (setq make-backup-files nil)
 
+;;packages
 (add-to-list 'load-path "~/emacsplugs")
