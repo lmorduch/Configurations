@@ -15,7 +15,7 @@
 
 (global-set-key [(f7)] 'scroll-up-command)
 
-(global-set-ket [(f8)] 'scroll-down-command)
+(global-set-key [(f8)] 'scroll-down-command)
 
 ;; ------------------------------------------------ autosave and backup
 ;; Put autosave files (ie #foo#) in one place, *not* scattered all over the
