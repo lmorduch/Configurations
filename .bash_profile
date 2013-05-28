@@ -6,5 +6,5 @@ export CLICOLOR=1
 
 export LSCOLORS=bxfxDxdxcxegedagagacad
 
-export ALTERNATE_EDITOR=emacs EDITOR=emacsclient VISUAL=emacsclient
+source ~/oz/oz_app/curl/command_helpers.sh                                   
 

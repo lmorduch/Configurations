@@ -1,14 +1,21 @@
-;; Custom colors
-(custom-set-faces
- '(default ((t (:stipple nil :background "black" :foreground "white" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 80 :width normal :family "xos4-terminus")))))
+;; CUA mode
+(cua-mode 1)
 
+;; Column number
+(column-number-mode 1)
+
+;; Key settings
 (global-set-key [(f2)] 'make-frame-command)
 
-(global-set-key [(f3)] 'delete-frame)
+(global-set-key [(f3)] 'other-frame)
 
-(global-set-key [(f4)] 'other-frame)
+(global-set-key [(f4)] 'delete-frame)
 
 (global-set-key [(f5)] 'undo)
+
+(global-set-key [(f7)] 'scroll-up-command)
+
+(global-set-ket [(f8)] 'scroll-down-command)
 
 ;; ------------------------------------------------ autosave and backup
 ;; Put autosave files (ie #foo#) in one place, *not* scattered all over the
@@ -36,5 +43,10 @@
 (setq bkup-backup-directory-info (list (cons "." backup-dir)))
 (setq make-backup-files nil)
 
-;;packages
-(add-to-list 'load-path "~/emacsplugs")
+;; Packages
+(add-to-list 'load-path "~/.emacs.d/")
+
+;;Yari
+(load "yari.el")
+(global-set-key [(f6)] 'yari)
+
